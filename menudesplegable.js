@@ -1,9 +1,9 @@
-const $detailsList = document.querySelectorAll('details')
-$detailsList.forEach(($details) => {
-  $details.querySelector('summary').addEventListener('click', expand)
+const detailsList = document.querySelectorAll('details')
+detailsList.forEach((details) => {
+  details.querySelector('summary').addEventListener('click', expand)
 })
 function expand() {
-  $detailsList.forEach(($details) => {
-    $details.removeAttribute('open')
+  detailsList.forEach((details) => {
+    details.removeAttribute('open')
   })
 }
