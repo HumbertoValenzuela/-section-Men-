@@ -1,0 +1,26 @@
+body {
+    font-family: system-ui;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+  }
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+  summary {
+    font-weight: bold;
+    margin: .5em .5em .5em;    
+    cursor: pointer;
+    outline: 0;
+  }
+
+  details[open] {
+    padding: .5em;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
